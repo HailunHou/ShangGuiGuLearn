@@ -14,5 +14,6 @@ public class Test {
         System.out.println(Integer.toHexString(System.identityHashCode(str)));
         System.out.println();
         System.out.println("来自实验室");
+
     }
 }
