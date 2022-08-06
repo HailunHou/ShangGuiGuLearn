@@ -13,5 +13,6 @@ public class Test {
         System.out.println(str);
         System.out.println(Integer.toHexString(System.identityHashCode(str)));
         System.out.println();
+        System.out.println();
     }
 }
