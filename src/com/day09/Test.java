@@ -14,6 +14,5 @@ public class Test {
         System.out.println(Integer.toHexString(System.identityHashCode(str)));
         System.out.println();
         System.out.println();
-        System.out.println("来自宿舍电脑的push");
     }
 }
