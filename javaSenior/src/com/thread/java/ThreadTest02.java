@@ -1,9 +1,10 @@
 package com.thread.java;
 
+
 /**
- * 多线程简单实现（实现Runnable方式）
+ * 多线程简单实现（继承Thread方式）
  */
-class Thread01 implements Runnable {
+class Thread02 extends Thread {
 
     @Override
     public void run() {
@@ -15,10 +16,10 @@ class Thread01 implements Runnable {
     }
 }
 
-public class ThreadTest01 {
+public class ThreadTest02 {
     public static void main(String[] args) {
-        Thread01 thread01 = new Thread01();
-        new Thread(thread01).start();
+        Thread02 thread02 = new Thread02();
+        thread02.start();
         for (int i = 0; i < 100; i++) {
             if (i % 2 != 0) {
                 System.out.println(Thread.currentThread().getName() + ":" + i);
